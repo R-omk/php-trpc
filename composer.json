@@ -1,0 +1,32 @@
+{
+  "name": "romkart/trpc",
+  "description": "RPC via tarantool",
+  "keywords": [
+    "rpc"
+  ],
+  "license": "MIT",
+  "require": {
+  	"php": ">=7.0",
+    "tarantool/client": "dev-master@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Romkart\\Trpc\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Romkart\\Trpc\\": ["tests/", "tests/Fake"]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "0.1.x-dev"
+    }
+  }
+}
